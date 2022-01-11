@@ -16,9 +16,9 @@ export const List = () => {
             <div className='d-flex justify-content-center my-5'>
                 <ul className="list-group list-group-flush w-50">
                     {
-                    list?.map(item =>
-                        < li key={item.id} className="list-group-item">{item.randomList}</li>
-                    )}
+                        list?.map(item =>
+                            < li key={item.id} className="list-group-item">{item.randomList}</li>
+                        )}
                 </ul>
             </div>
         </div >

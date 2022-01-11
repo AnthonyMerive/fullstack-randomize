@@ -1,10 +1,12 @@
 import { types } from "../types/types";
 
+const URL = 'https://randomizeapi.herokuapp.com/random'
+
 export const fetchRandom = (state) => (dispatch) => {
 
     dispatch({ type: types.viewLoading });
 
-    return fetch(`http://localhost:8080/random`, {
+    return fetch(URL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,7 +25,7 @@ export const fetchAllRandomList = () => (dispatch) => {
 
     dispatch({ type: types.viewLoading });
 
-    return fetch(`http://localhost:8080/random`)
+    return fetch(URL)
         .then(response => response.json())
         .then(json => {
             
