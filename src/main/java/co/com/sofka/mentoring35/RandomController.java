@@ -17,7 +17,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://randomize-2fd0f.web.app/")
 @RequestMapping(value = "/random")
 public class RandomController {
 
