@@ -18,7 +18,7 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping(value = "/r")
+@RequestMapping(value = "/random")
 public class RandomController {
 
     private RandomRepository randomRepository;
