@@ -15,7 +15,8 @@ export const List = () => {
             <h3 className='mt-2'>Historial:</h3>
             <div className='d-flex justify-content-center my-5'>
                 <ul className="list-group list-group-flush w-50">
-                    {list?.map(item =>
+                    {
+                    list?.map(item =>
                         < li key={item.id} className="list-group-item">{item.randomList}</li>
                     )}
                 </ul>

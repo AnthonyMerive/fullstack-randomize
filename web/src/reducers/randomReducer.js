@@ -2,7 +2,7 @@ import { types } from "../types/types"
 
 export function random(state = {
     result: {},
-    list: {}
+    list: []
 }, action) {
     switch (action.type) {
         case types.randomResult: {
